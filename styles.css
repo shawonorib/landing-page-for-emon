@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+  }
+  
+  /* Header Section */
+  .header {
+    background-image: linear-gradient(to right, #111111cc, #0238b7a0);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .header-content .left-logo {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content .left-logo img {
+    width: 45px;
+    height: 45px;
+  }
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    font-size: 1.1rem;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+    font-family: sans-serif;
+  }
+  .nav-links a:hover {
+    background-color: #000000;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    padding: 8px 15px;
+    color: #5f80cf;
+  }
+  
+  /* Section General Styling */
+  .section-bg {
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  /* Overview Section */
+  #overview {
+    background-color: #50618a6f;
+    color: #000000;
+    background-image: url(images/George-Brown.jpg);
+  }
+  #overview h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #overview p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #overview .firstP::first-line {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  #overview .reg-lern-button {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  #overview .regLearn-button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  #overview .regLearn-button:first-child {
+    background: #404141;
+    color: #ffffff;
+    border: 2px solid #000000;
+  }
+  #overview .regLearn-button.second {
+    background: #6082d1;
+    color: rgb(0, 0, 0);
+    border: 2px solid #00174e;
+  }
+  #overview .regLearn-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Event Details Section */
+  #details {
+    background-color: #8f99ae6f;
+    color: rgb(255, 255, 255);
+  }
+  #details h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #details p, address {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  
+  /* Speaker Cards */
+  #speakers .speaker-card {
+    display: inline-block;
+    width: 60%;
+    padding: 15px;
+    margin: 10px;
+    background-color: #3a4d78;
+    border-radius: 8px;
+    margin-left: 95px;
+    transition: transform 0.3s;
+  }
+  #speakers {
+    background-color: #50618a6f;
+    color: white;
+  }
+  #speakers h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #speakers .speaker-all {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2px;
+  }
+  #speakers .speaker-all img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  #speakers .speaker-card:hover {
+    transform: scale(1.25);
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    background-color: #8f99ae6f;
+    color: rgb(122, 116, 116);
+  }
+  #gallery h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #gallery .gallery-item {
+    display: inline-block;
+    transition: transform 0.3s;
+    font-family: cursive;
+  }
+  #gallery .gallery-photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  #gallery .gallery-item img {
+    height: 300px;
+    width: 380px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  #gallery .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Schedule Section */
+  #schedule {
+    background-color: #50618a6f;
+    color: white;
+  }
+  #schedule h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #schedule p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #schedule .session-all {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 20px;
+  }
+  #schedule .session {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    height: 150px;
+    width: 500px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  #schedule .session:hover {
+    background-color: rgba(32, 29, 29, 0.65);
+    transform: scale(1.1);
+  }
+  
+  /* Testimonials */
+  #testimonials {
+    background-color: #8f99ae6f;
+    color: rgb(122, 116, 116);
+  }
+  #testimonials h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 10vh;
+  
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* margin-bottom: 100px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+  }
+  #testimonials blockquote {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  
+  #testimonials blockquote cite {
+    display: block;
+    font-size: 1rem;
+    color: #160101;
+  }
+  
+  
+  /* Location Section */
+  #location {
+    background-color: #50618a6f;
+    color: white;
+  }
+  #location h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 12vh;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #location p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #location .map iframe {
+    width: 80%;
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-image: linear-gradient(to right, #111111cc, #0238b7a0);
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+/* Mobile and Tablet Styles */
+@media (max-width: 1024px) {
+  /* Header adjustments for smaller screens */
+  .header-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .header-content h1 {
+      font-size: 1.8rem;
+  }
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1rem;
+  }
+  .nav-links a {
+      padding: 8px;
+  }
+
+  /* General section adjustments */
+  .section-bg {
+      padding: 20px 10px;
+  }
+
+  /* Overview Section */
+  #overview h1 {
+      font-size: 3rem;
+  }
+  #overview p {
+      font-size: 1.2rem;
+  }
+  #overview .reg-lern-button {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  /* Event Details Section */
+  #details h2 {
+      font-size: 3rem;
+  }
+  #details p, #details address {
+      font-size: 1.5rem;
+  }
+
+  /* Speakers Section - Stack cards */
+  #speakers .speaker-all {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+  }
+  #speakers .speaker-card {
+      width: 100%;
+      margin: 10px auto;
+  }
+
+  /* Gallery Section - Adjust grid */
+  #gallery .gallery-photo {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+  }
+  #gallery .gallery-item img {
+      height: auto;
+      width: 100%;
+  }
+
+  /* Schedule Section - Single column layout */
+  #schedule .session-all {
+      grid-template-columns: 1fr;
+  }
+  #schedule .session {
+      width: 90%;
+  }
+
+  /* Testimonials Section */
+  #testimonials h2 {
+      font-size: 4rem;
+  }
+  #testimonials blockquote {
+      font-size: 1.2rem;
+  }
+  #schedule .session-all {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+
+  /* Location Section */
+  #location h2 {
+      font-size: 3rem;
+  }
+  #location p {
+      font-size: 1.2rem;
+  }
+  #location .map iframe {
+      width: 100%;
+      height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for smaller screens */
+  .header {
+    padding: 1px;
+    position: static;
+    
+  }
+  .header-content h1 {
+      font-size: 1.5rem;
+  }
+
+  /* Overview Section */
+  #overview h1 {
+      font-size: 2.5rem;
+  }
+  #overview p {
+      font-size: 1rem;
+  }
+  #overview .reg-lern-button a {
+      padding: 12px 30px;
+      font-size: 1rem;
+  }
+
+  /* Event Details Section */
+  #details h2 {
+      font-size: 2rem;
+  }
+  #details p, #details address {
+      font-size: 1.2rem;
+  }
+
+  /* Speakers Section - Full-width cards */
+  #speakers h2 {
+    font-size: 2rem;
+}
+  #speakers .speaker-all {
+      grid-template-columns: 1fr;
+  }
+
+  /* Gallery Section - Stack all items */
+  #gallery h2 {
+    font-size: 2rem;
+}
+  #gallery .gallery-photo {
+    
+      grid-template-columns: 1fr;
+  }
+  img, 
+  iframe,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  /* Schedule Section */
+  #schedule h2 {
+      font-size: 2rem;
+  }
+  #schedule .session {
+      width: 100%;
+  }
+  #schedule .session-all {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+
+  /* Testimonials Section */
+  #testimonials h2 {
+      font-size: 2rem;
+  }
+  #testimonials blockquote {
+      font-size: 1rem;
+  }
+
+  /* Footer - Smaller padding */
+  .footer {
+      padding: 15px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #5A76B6;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    background-color: #003ac2;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .scroll-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

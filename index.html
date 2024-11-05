@@ -1,106 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Landing Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechConnect Business Summit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <header class="header">
+      <div class="header-content">
+        <div class="left-logo">
+          <a href="#overview"><img src="/images/favicon.png" alt="Event Logo" class="logo"/></a>
+          <h1>TechConnect Summit</h1>
+        </div>
+    
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<!-- Header with Navigation -->
-<header class="main-header">
-    <h1>Event Name</h1>
-    <p class="tagline">Join us for an unforgettable experience!</p>
-    <nav class="navbar">
-        <a href="#details">Details</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#location">Location</a>
-    </nav>
-</header>
+    <!-- Overview Section -->
+    <section id="overview" class="section-bg">
+      <h1>TechConnect Summit</h1>
+      <p class="firstP">
+        Welcome to the TechConnect Business Summit, where innovation meets
+        business excellence. <br>Discover the future of technology with us.
+      </p>
+      <p>Your Gateway to Technology and Innovation. Join us for an insightful event on innovation and technology</p>
+      <div class="reg-lern-button">
+        <a href="#register" class="regLearn-button">Register Now</a>
+        <a href="#learn-more" class="regLearn-button second">Learn More</a>
+      </div>
+    </section>
 
-<!-- Event Details Section -->
-<section id="details" class="section">
-    <h2>Event Details</h2>
-    <p><strong>Date:</strong> November 6, 2023</p>
-    <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
-    <p><strong>Venue:</strong> Grand Hall, City Center</p>
-    <p>This event brings together industry experts and enthusiasts for a day of learning and networking.</p>
-</section>
+    <!-- Event Details Section -->
+    <section id="details" class="details section-bg">
+      <h2>Event Details</h2>
+      <p><strong>Date:</strong> December 6-8, 2024</p>
+      <address><strong>Location:</strong> George Brown College,  Ontario, Canada</address>
+      <p>
+        <strong>Purpose:</strong> Connecting technology leaders, innovators, and
+        entrepreneurs.
+      </p>
+    </section>
 
-<!-- Guests & Speakers Section -->
-<section id="speakers" class="section">
-    <h2>Guests & Speakers</h2>
-    <article class="speaker">
-        <figure>
-            <img src="/images/speaker1.jpg" alt="Speaker Name">
-            <figcaption>Jane Doe, CEO of TechWorld</figcaption>
-        </figure>
-        <p>Jane has over 20 years of experience in technology and is a sought-after speaker on innovation.</p>
-    </article>
-    <article class="speaker">
-        <figure>
-            <img src="/images/speaker2.jpg" alt="Speaker Name">
-            <figcaption>John Smith, CTO of Innovate Inc.</figcaption>
-        </figure>
-        <p>John is known for his expertise in AI and machine learning and has authored numerous books on the subject.</p>
-    </article>
-</section>
-
-<!-- Gallery Section -->
-<section id="gallery" class="section">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-        <img src="/images/event1.jpg" alt="Event Image 1">
-        <img src="/images/event2.jpg" alt="Event Image 2">
-        <img src="/images/event3.jpg" alt="Event Image 3">
-        <img src="/images/event4.jpg" alt="Event Image 3">
-        <img src="/images/event5.jpg" alt="Event Image 3">
+    <!-- Guests & Speakers Section -->
+    <section id="speakers" class="speakers section-bg">
+      <h2>Featured Speakers</h2>
+      <div class="speaker-all">
+      <article class="speaker-card">
+        <img src="/images/women.jpg" alt="Speaker 1" />
+        <h3>Angila Argon</h3>
+        <p>CEO, Innovate Tech</p>
+      </article>
+      <article class="speaker-card">
+        <img src="/images/man4.jpg" alt="Speaker 2" />
+        <h3>Jane Smith</h3>
+        <p>CTO, FutureX</p>
+      </article>
+      <article class="speaker-card">
+        <img src="/images/man3.jpg" alt="Speaker 1" />
+        <h3>Dr. John Doe</h3>
+        <p>CTO, Innovate Tech</p>
+      </article>
+      <article class="speaker-card">
+        <img src="/images/man2.jpg" alt="Speaker 2" />
+        <h3>Smith Hoge</h3>
+        <p>Head of Product, FutureAura</p>
+      </article>
     </div>
-</section>
+    </section>
 
-<!-- Schedule Section -->
-<section id="schedule" class="section">
-    <h2>Schedule & Sessions</h2>
-    <div class="schedule-item">
-        <time>10:00 AM</time> - Opening Ceremony
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-bg">
+      <h2>Event Gallery</h2>
+      <div class="gallery-photo">
+      <figure class="gallery-item">
+        <img src="/images/George-Brown-College.jpg" alt="Gallery Image 1" />
+        <figcaption>Networking Session</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/George-Brown.jpg" alt="Gallery Image 2" />
+        <figcaption>Keynote Speech</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="/images/George_Brown_College.jpg" alt="Gallery Image 1" />
+        <figcaption>Networking Session</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/gbc student.jpg" alt="Gallery Image 2" />
+        <figcaption>Keynote Speech</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="/images/gbc student2.jpg" alt="Gallery Image 1" />
+        <figcaption>Networking Session</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/gbc students3.jpg" alt="Gallery Image 2" />
+        <figcaption>Keynote Speech</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <video width="380" height="300" controls>
+            <source src="/images/Feel the Pulse at the Events Management Program at George Brown College.mp4">
+            Your browser does not support the video tag.
+          </video>
+        
+        <figcaption>Networking Session Video</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <iframe width="380" height="300" src="https://www.youtube.com/embed/OvG6f5p_0-k?si=F8VwaueGW1kQBZkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Keynote Speech Video</figcaption>
+      </figure>
     </div>
-    <div class="schedule-item">
-        <time>11:00 AM</time> - Keynote by Jane Doe
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule section-bg">
+      <h2>Schedule & Sessions</h2>
+      <div class="session-all">
+      <div class="session">
+        <h3>Day 1: Innovation & Technology</h3>
+        <p>10:00 AM - Keynote</p>
+      </div>
+      <div class="session">
+        <h3>Day 2: Business & Entrepreneurship</h3>
+        <p>10:00 AM - Keynote</p>
+      </div>
+      <div class="session">
+        <h3>Day 1: Innovation & Technology</h3>
+        <p>11:00 AM - Workshop</p>
+      </div>
+      <div class="session">
+        <h3>Day 2: Business & Entrepreneurship</h3>
+        <p>11:00 AM - Workshop</p>
+      </div>
     </div>
-    <div class="schedule-item highlight">
-        <time>12:30 PM</time> - Panel Discussion
-    </div>
-</section>
+      
+    </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="section">
-    <h2>Testimonials</h2>
-    <blockquote>
-        "The best event I've attended this year! The speakers were outstanding and the organization was flawless."
-        <cite>- Sarah L., Attendee</cite>
-    </blockquote>
-    <blockquote>
-        "A truly inspiring event. I left with so much knowledge and new connections."
-        <cite>- Mike R., Participant</cite>
-    </blockquote>
-</section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-bg">
+      <h2>Testimonials</h2>
+      <blockquote>
+        <p>"TechConnect World is an absolute game-changer for innovators and industry leaders. The networking opportunities, insightful presentations, and exposure to cutting-edge technologies are unparalleled."</p>
+        <cite>- Alex Turner, Tech Aspirant</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The pitch competition was a fantastic opportunity to showcase my technology to a global audience. It led to some exciting collaborations."</p>
+        <cite>- Turner Alex, Innovator</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The matchmaking sessions were incredibly efficient. We were able to meet with a large number of potential partners in a short amount of time."</p>
+        <cite>- Jobs Klenin, Manager of Ripa Corporation</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The networking events were a great way to meet like-minded individuals and build professional relationships."</p>
+        <cite>- Mike Ton, University Student</cite>
+      </blockquote>
+      <blockquote>
+        <p>"As a student, I was amazed by the level of expertise and knowledge shared at TechConnect. It inspired me to pursue a career in innovation."</p>
+        <cite>- Lisa Hogue, Graduated Student</cite>
+      </blockquote>
+    </section>
 
-<!-- Event Location Section -->
-<section id="location" class="section">
-    <h2>Event Location</h2>
-    <p>Grand Hall, City Center, 123 Main Street, Cityville</p>
-    <iframe src="https://maps.google.com/maps?q=city%20center%20grand%20hall&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen=""></iframe>
-</section>
+    <!-- Location Section -->
+    <section id="location" class="location section-bg">
+      <h2>Event Location</h2>
+      <p>George Brown College, Canada.</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.659710135094!2d-79.41330332336881!3d43.67604655095229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b349c7e14727f%3A0x8bd06e05bd9af30d!2sGeorge%20Brown%20College!5e0!3m2!1sen!2sbd!4v1730774768439!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="main-footer">
-    <p>© 2024 Event Name. All rights reserved.</p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Masum Hossen Emon. All rights reserved.</p>
+    </footer>
 
-</body>
+    <!-- Add this before closing body tag -->
+    <a href="#" class="scroll-top">↑</a>
+
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+  </body>
 </html>
